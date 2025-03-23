@@ -1,0 +1,157 @@
+@media screen and (max-width: 480px) {
+  .header-logo {
+    width: 100px;
+  }
+  .bg-1 {
+    height: 458px;
+  }
+  .start-div:hover {
+    font-size: 12px;
+  }
+  .banner-text-1 {
+    font-size: 30px;
+    padding-top: 50px;
+    line-height: 40px;
+  }
+  .banner-text-2 {
+    font-size: 18px;
+  }
+  .brushed {
+    font-size: 18px;
+  }
+  .excel-tetx {
+    font-size: 17px;
+  }
+  .pilot-text {
+    font-size: 17px;
+  }
+  .third-bg {
+    padding-top: 47px;
+    height: 320px;
+  }
+  .third-bg-head {
+    font-size: 26px;
+  }
+  .third-bg-para {
+    font-size: 12px;
+    width: 100%;
+  }
+  .second-session-head {
+    font-size: 25px;
+  }
+
+  .explore-img {
+    width: 100%;
+  }
+  .explore-text {
+    font-size: 23px;
+    bottom: 40px;
+  }
+  .explore-text-2 {
+    font-size: 13px;
+    bottom: 27px;
+  }
+  .category-text {
+    font-size: 22px;
+  }
+  .category-text-2 {
+    font-size: 12px;
+  }
+  .for-pads {
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  .good-read-text {
+    font-size: 17px;
+  }
+  .read-more-bts {
+    width: 110px;
+    height: 40px;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .footer-end-div {
+    font-size: 12px;
+  }
+  .cards-parent-box {
+    width: 100%;
+  }
+  .explore-borders {
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 990px) {
+  .header-logo {
+    width: 100px;
+  }
+  .bg-1 {
+    height: 458px;
+  }
+  .start-div:hover {
+    font-size: 12px;
+  }
+  .banner-text-1 {
+    font-size: 30px;
+    padding-top: 50px;
+    line-height: 40px;
+  }
+  .banner-text-2 {
+    font-size: 18px;
+  }
+  .brushed {
+    font-size: 18px;
+  }
+  .excel-tetx {
+    font-size: 17px;
+  }
+  .pilot-text {
+    font-size: 17px;
+  }
+  .third-bg {
+    padding-top: 47px;
+    height: 320px;
+  }
+  .third-bg-head {
+    font-size: 26px;
+  }
+  .third-bg-para {
+    font-size: 12px;
+    width: 100%;
+  }
+  .nav-links a {
+    font-size: 12px;
+  }
+  .second-session-head {
+    font-size: 30px;
+  }
+  .explore-img {
+    width: 100%;
+  }
+  .explore-text {
+    font-size: 28px;
+    bottom: 40px;
+  }
+  .explore-text-2 {
+    font-size: 16px;
+    bottom: 27px;
+  }
+  .category-text {
+    font-size: 25px;
+  }
+  .category-text-2 {
+    font-size: 14px;
+  }
+  .for-pads {
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  .good-read-text {
+    font-size: 20px;
+  }
+  .read-more-bts {
+    width: 120px;
+    height: 45px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
