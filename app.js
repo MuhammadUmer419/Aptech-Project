@@ -24,3 +24,24 @@ let images = [
   window.onload = function() {
     setInterval(changeBackground, 3000);
   };
+
+  
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".tab-btn");
+    const contents = document.querySelectorAll(".custom-tab-content");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            // Remove active class from all buttons
+            buttons.forEach(btn => btn.classList.remove("active"));
+            // Hide all content sections
+            contents.forEach(content => content.classList.remove("active"));
+
+            // Add active class to clicked button
+            this.classList.add("active");
+            // Show corresponding content
+            document.getElementById(this.dataset.target).classList.add("active");
+        });
+    });
+});

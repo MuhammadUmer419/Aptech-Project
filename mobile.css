@@ -79,6 +79,21 @@
   .explore-borders {
     margin-top: 50px;
   }
+  .trend-mirros {
+    font-size: 28px;
+  }
+  .custom-tabs button {
+    font-size: 16px;
+  }
+  .mirror-img {
+    height: 100%;
+  }
+  .frames-heading {
+    font-size: 20px;
+  }
+}
+.frames-para-2 {
+  font-size: 12px;
 }
 @media screen and (min-width: 480px) and (max-width: 990px) {
   .header-logo {
@@ -153,5 +168,15 @@
     height: 45px;
     font-size: 15px;
     margin-bottom: 20px;
+  }
+
+  .trend-mirros {
+    font-size: 32px;
+  }
+  .custom-tabs button {
+    font-size: 19px;
+  }
+  .frames-heading {
+    font-size: 23px;
   }
 }
