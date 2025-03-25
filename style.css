@@ -129,6 +129,7 @@ h6 {
   box-shadow: 2px 0 10px rgba(255, 255, 255, 0.1);
   padding-top: 60px;
   transition: all 0.5s ease-in-out;
+  z-index: 10000;
 }
 
 .offcanvas-menu a {
