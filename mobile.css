@@ -91,11 +91,54 @@
   .frames-heading {
     font-size: 20px;
   }
+
+  .frames-para-2 {
+    font-size: 12px;
+  }
+  /* ABOUT US PAGE START HERE  */
+  .about-us-banner {
+    height: 200px;
+  }
+  .about-heading {
+    font-size: 16px;
+  }
+  .border-line {
+    display: none;
+  }
+  .count-number {
+    font-size: 35px;
+  }
+  .count-against {
+    font-size: 12px;
+  }
+  .info-text {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .info-name {
+    font-size: 30px;
+  }
+  .info-text-2 {
+    font-size: 12px;
+  }
+  .blue-bg {
+    margin-top: 50px;
+    padding-top: 40px;
+  }
+  .choose-head {
+    font-size: 20px;
+    width: 100%;
+  }
+  .choose-para {
+    font-size: 12px;
+  }
+
+  .banner-about-bg {
+    margin-top: 50px;
+    padding-top: 120px;
+  }
 }
-.frames-para-2 {
-  font-size: 12px;
-}
-@media screen and (min-width: 480px) and (max-width: 990px) {
+@media screen and (min-width: 481px) and (max-width: 990px) {
   .header-logo {
     width: 100px;
   }
@@ -178,5 +221,46 @@
   }
   .frames-heading {
     font-size: 23px;
+  }
+
+  /* ABOUT US PAGE START HERE  */
+  .about-us-banner {
+    height: 400px;
+  }
+  .about-heading {
+    font-size: 19px;
+  }
+  .count-number {
+    font-size: 40px;
+  }
+  .count-against {
+    font-size: 12px;
+  }
+  .info-text {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .info-name {
+    font-size: 35px;
+  }
+  .info-text-2 {
+    font-size: 14px;
+  }
+  .blue-bg {
+    margin-top: 50px;
+    padding-top: 40px;
+    height: fit-content;
+    padding-bottom: 40px;
+  }
+  .choose-head {
+    font-size: 25px;
+    width: 100%;
+  }
+  .choose-para {
+    font-size: 14px;
+  }
+  .banner-about-bg {
+    margin-top: 50px;
+    padding-top: 150px;
   }
 }

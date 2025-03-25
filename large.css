@@ -1,8 +1,7 @@
-@media screen and (min-width: 1050px) and (max-width: 1250px) {
+@media screen and (min-width: 1250px) and (max-width: 1500px) {
   /* ABOUT US PAGE START HERE  */
   .info-text {
     font-size: 20px;
-    padding-top: 10px;
   }
   .info-name {
     font-size: 40px;
