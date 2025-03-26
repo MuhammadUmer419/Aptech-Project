@@ -138,6 +138,45 @@
     padding-top: 90px;
     height: 505px;
   }
+
+  /* CONTACT US PAGE START HERE  */
+  .contactus-bg {
+    height: 400px;
+  }
+  .contact-head {
+    font-size: 35px;
+    padding-top: 55px;
+  }
+  .contact-para {
+    font-size: 18px;
+  }
+  .contact-parent-box {
+    width: 95%;
+  }
+  .contact-parent-text {
+    font-size: 30px;
+  }
+  .input-field-1 {
+    font-size: 13px;
+  }
+  .input-text {
+    font-size: 14px;
+  }
+  .message-box {
+    font-size: 14px;
+  }
+
+  /* FAQS PAGE START HERE  */
+  .frequent-head {
+    font-size: 22px;
+    text-wrap: nowrap;
+  }
+  .accordion-header {
+    font-size: 12px;
+  }
+  .accordion-content {
+    font-size: 14px;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 990px) {
   .header-logo {
@@ -263,5 +302,44 @@
   .banner-about-bg {
     margin-top: 50px;
     padding-top: 150px;
+  }
+
+  /* CONTACT US PAGE START HERE  */
+  .contactus-bg {
+    height: 500px;
+  }
+  .contact-head {
+    font-size: 45px;
+    padding-top: 100px;
+  }
+  .contact-para {
+    font-size: 22px;
+  }
+  .contact-parent-box {
+    width: 95%;
+  }
+  .contact-parent-text {
+    font-size: 40px;
+  }
+  .input-field-1 {
+    font-size: 16px;
+  }
+  .input-text {
+    font-size: 16px;
+  }
+  .message-box {
+    font-size: 16px;
+  }
+
+  /* FAQS PAGE START HERE  */
+  .frequent-head {
+    font-size: 30px;
+    text-wrap: nowrap;
+  }
+  .accordion-header {
+    font-size: 14px;
+  }
+  .accordion-content {
+    font-size: 14px;
   }
 }

@@ -1080,27 +1080,13 @@
       </div>
     </div>
   </body>
+  <script src="app.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script>
     AOS.init();
   </script>
 
-  <script>
-    const viewMoreBtn = document.getElementById("expandableViewMoreBtn");
-    const viewLessBtn = document.getElementById("expandableViewLessBtn");
-    const expandableContent = document.getElementById("expandableContent");
 
-    viewMoreBtn.addEventListener("click", function () {
-      expandableContent.classList.add("expandable-visible");
-      expandableContent.classList.remove("expandable-hidden");
-      viewMoreBtn.style.display = "none";
-    });
-
-    viewLessBtn.addEventListener("click", function () {
-      expandableContent.classList.add("expandable-hidden");
-      expandableContent.classList.remove("expandable-visible");
-      viewMoreBtn.style.display = "block";
-    });
-  </script>
 </html>

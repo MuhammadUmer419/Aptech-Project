@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>InYouths</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <!-- International Telephone Input CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="tablet.css" />
+    <link rel="stylesheet" href="laptop.css" />
+    <link rel="stylesheet" href="large.css" />
+  </head>
+
+  <body>
+
+<!-- START HERE  -->
+<div class="contactus-bg">
+    <div class="start-div pt-2">Reflect Your Style, Elevate Your Space!</div>
+
+    <div class="hover-navs">
+      <!-- Navbar -->
+      <nav class="navbar px-3 pt-3">
+        <a href="index.html">
+          <img
+            src="./img/inyouths_4ef32b34-0d38-47e7-ab2a-a545e92b47b8_340x.avif"
+            alt="Logo"
+            class="header-logo"
+          />
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html">HOME</a>
+          <a href="aboutUs.html">ABOUT</a>
+          <a href="category.html">CATEGORIES</a>
+          <a href="product.html">PRODUCTS</a>
+          <a href="contact.html">CONTACT US</a>
+          <a href="support.html">SUPPORT</a>
+        </div>
+        <div class="d-flex gap-md-4 gap-2">
+          <i class="fa-solid fa-message text-white"></i>
+          <i class="fa-solid fa-magnifying-glass text-white"></i>
+          <i class="fa-solid fa-user text-white"></i>
+          <i class="fa-solid fa-cart-shopping text-white"></i>
+        </div>
+        <div class="hamburger" onclick="openMenu()">
+          <i class="fa-solid fa-bars text-white"></i>
+        </div>
+      </nav>
+
+      <!-- Offcanvas Menu -->
+      <div class="offcanvas-menu" id="offcanvasMenu">
+        <span class="close-btn" onclick="closeMenu()">&times;</span>
+        <a href="index.html">HOME</a>
+        <a href="aboutUs.html">ABOUT</a>
+        <a href="category.html">CATEGORIES</a>
+        <a href="product.html">PRODUCTS</a>
+        <a href="contactus.html">CONTACT US</a>
+        <a href="support.html">SUPPORT</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="contact-head">FAQS</h2>
+      <p class="contact-para pt-3">
+        Home / <span class="fw-bold">FAQs</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- FAQS  -->
+   <div class="faq-bg">
+
+ 
+   <div class="container mb-5">
+
+    <h2 class="frequent-head pt-5">Frequently Asked Questions</h2>
+   
+  <div class="accordion mt-3">
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+           1) Which types of mirrors are available?
+            <span class="arrow">→</span>
+        </div>
+        <div class="accordion-content">We offer wall mirrors, vanity mirrors, decorative mirrors, and more.</div>
+    </div>
+    <div class="accordion-item mt-3">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+           2) Do you provide custom-sized mirrors?
+            <span class="arrow">→</span>
+        </div>
+        <div class="accordion-content">Yes, we offer custom sizes based on your requirements.</div>
+    </div>
+    <div class="accordion-item mt-3">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+           3) What are the price ranges?
+            <span class="arrow">→</span>
+        </div>
+        <div class="accordion-content">Prices vary depending on the type and size of the mirror. Check our catalog for details.</div>
+    </div>
+    <div class="accordion-item mt-3">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+           4) Do you offer delivery services?
+            <span class="arrow">→</span>
+        </div>
+        <div class="accordion-content">Yes, we provide home delivery with secure packaging.</div>
+    </div>
+
+    <div class="accordion-item mt-3">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+           5) Do you offer installation services?
+            <span class="arrow">→</span>
+        </div>
+        <div class="accordion-content">Yes, we provide professional installation services for all types of mirrors.</div>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+
+
+    <!-- FOOTER SESSION START HERE  -->
+
+    <div class="footer-bg">
+        <div class="container">
+          <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-md-5 py-3">
+            <div class="col mb-3">
+              <a
+                href="/"
+                class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+              >
+                <img src="./img/footer-logo.avif" alt="" />
+              </a>
+              <!-- MAPS  -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52947273.78782228!2d-161.7819503549982!3d35.90670612284416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2s!4v1742756827599!5m2!1sen!2s"
+                width="250"
+                height="150"
+                style="border: 0; border-radius: 10px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="mt-3"
+              ></iframe>
+              <!-- SOCAIL LINKS -->
+              <div class="d-flex gap-2 mt-3">
+                <div
+                  class="social-box d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-brands fa-facebook-f text-white"></i>
+                </div>
+  
+                <div
+                  class="social-box d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-brands fa-instagram text-white"></i>
+                </div>
+  
+                <div
+                  class="social-box d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-brands fa-youtube text-white"></i>
+                </div>
+  
+                <div
+                  class="social-box d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-brands fa-tiktok text-white"></i>
+                </div>
+              </div>
+  
+              <!-- CONTACT US -->
+              <div class="d-flex gap-3 align-items-center mt-4">
+                <i class="fa-solid fa-phone text-white"></i>
+                <p class="contact-text">Tel: +1 (213) 672 0829</p>
+              </div>
+  
+              <div class="d-flex gap-3 align-items-center mt-2">
+                <i class="fa-solid fa-envelope text-white"></i>
+                <p class="contact-text">support@inyouths.com</p>
+              </div>
+            </div>
+  
+            <div class="col col-lg-1 mb-3"></div>
+  
+            <div class="col col-lg-3 col-md-4 mb-3">
+              <h5 class="footer-headers">PRODUCTS</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mt-3">
+                  <a href="#" class="nav-link p-0 footer-anchors"
+                    >Custom LED Mirror</a
+                  >
+                </li>
+                <li class="nav-item mt-3">
+                  <a href="#" class="nav-link p-0 footer-anchors"
+                    >Bathroom LED Mirror</a
+                  >
+                </li>
+                <li class="nav-item mt-3">
+                  <a href="#" class="nav-link p-0 footer-anchors"
+                    >Backlit LED Mirror</a
+                  >
+                </li>
+                <li class="nav-item mt-3">
+                  <a href="#" class="nav-link p-0 footer-anchors"
+                    >Rectangular LED Mirror</a
+                  >
+                </li>
+                <li class="nav-item mt-3">
+                  <a href="#" class="nav-link p-0 footer-anchors"
+                    >Round LED Mirror</a
+                  >
+                </li>
+                <li class="nav-item mt-3">
+                  <a href="#" class="nav-link p-0 footer-anchors"
+                    >Arched LED Mirror</a
+                  >
+                </li>
+                <li class="nav-item mt-3">
+                  <a href="#" class="nav-link p-0 footer-anchors">Oval Mirror</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="col col-lg-3 mb-3">
+              <h5 class="footer-headers">INFORMATION</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mt-3">
+                  <a href="aboutUs.html" class="nav-link p-0 footer-anchors"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item mt-3">
+                  <a href="#" class="nav-link p-0 footer-anchors">Contact Us</a>
+                </li>
+                <li class="nav-item mt-3">
+                  <a href="#" class="nav-link p-0 footer-anchors"
+                    >LED Mirros Report</a
+                  >
+                </li>
+                <li class="nav-item mt-3">
+                  <a href="#" class="nav-link p-0 footer-anchors">FAQs</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="col col-lg-2 mb-3">
+              <h5 class="footer-headers">SUPPORT</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mt-3">
+                  <a href="#" class="nav-link p-0 footer-anchors"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li class="nav-item mt-3">
+                  <a href="#" class="nav-link p-0 footer-anchors">FAQs</a>
+                </li>
+                <li class="nav-item mt-3">
+                  <a href="#" class="nav-link p-0 footer-anchors"
+                    >Terms And Conditions</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+        <div class="footer-end-div">
+          Copyright © 2025<span class="fw-bold ps-1">In-Youths</span>. All Rights
+          Reserved
+        </div>
+      </div>
+
+
+
+
+
+    </body>
+
+    <script src="app.js"></script>
+
+    <script>
+        function toggleAccordion(element) {
+            const content = element.nextElementSibling;
+            const allContents = document.querySelectorAll(".accordion-content");
+            const allHeaders = document.querySelectorAll(".accordion-header");
+            
+            allContents.forEach(item => {
+                if (item !== content) item.style.display = "none";
+            });
+            allHeaders.forEach(header => {
+                if (header !== element) header.classList.remove("active");
+            });
+            
+            const isActive = content.style.display === "block";
+            content.style.display = isActive ? "none" : "block";
+            element.classList.toggle("active", !isActive);
+        }
+    </script>
+    </html>

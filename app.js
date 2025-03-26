@@ -26,7 +26,6 @@ let images = [
   };
 
   
-  
   document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll(".tab-btn");
     const contents = document.querySelectorAll(".custom-tab-content");
@@ -45,3 +44,31 @@ let images = [
         });
     });
 });
+
+function openMenu() {
+  document.getElementById("offcanvasMenu").style.left = "0";
+}
+
+function closeMenu() {
+  document.getElementById("offcanvasMenu").style.left = "-250px";
+}
+
+const viewMoreBtn = document.getElementById("expandableViewMoreBtn");
+const viewLessBtn = document.getElementById("expandableViewLessBtn");
+const expandableContent = document.getElementById("expandableContent");
+
+viewMoreBtn.addEventListener("click", function () {
+  expandableContent.classList.add("expandable-visible");
+  expandableContent.classList.remove("expandable-hidden");
+  viewMoreBtn.style.display = "none";
+});
+
+viewLessBtn.addEventListener("click", function () {
+  expandableContent.classList.add("expandable-hidden");
+  expandableContent.classList.remove("expandable-visible");
+  viewMoreBtn.style.display = "block";
+});
+
+
+
+

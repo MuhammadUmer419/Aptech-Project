@@ -964,3 +964,174 @@ h6 {
   align-items: center;
   border-radius: 20px;
 }
+
+/* CONTACT US PAGE START HERE  */
+.contactus-bg {
+  background-image: url(./img/contactus-bg.webp);
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.contactus-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 40% dark overlay */
+}
+
+.contact-head {
+  color: white;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 130px;
+}
+.contact-para {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+.contact-color-bg {
+  background-color: black;
+  height: fit-content;
+  padding-bottom: 55px;
+}
+.contact-parent-box {
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: #333333;
+  padding: 50px 14px;
+  width: 645px;
+  height: fit-content !important;
+  margin: 0 auto;
+  height: 600px;
+}
+
+.contact-parent-text {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.input-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+}
+.input-field-1 {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  background-color: #191919;
+  border: none;
+  color: white;
+  caret-color: white;
+}
+.message-box {
+  width: 100%;
+  height: 197px;
+  background-color: #191919;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  caret-color: white;
+}
+
+.contact-bt {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  width: 100%;
+  height: 44px;
+  border-radius: 25px;
+  border: none;
+}
+
+.eclispe-arrow {
+  position: absolute;
+  right: 18px;
+  top: 27px;
+}
+
+.iti__selected-dial-code {
+  color: white;
+  font-size: 15px !important;
+}
+.iti__arrow {
+  color: white !important;
+}
+.iti.iti--allow-dropdown.iti--separate-dial-code {
+  width: 100%;
+}
+
+/* FAQS PAGE START HERE  */
+.frequent-head {
+  color: white;
+  font-size: 45px;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 600;
+}
+
+.faq-bg {
+  background-color: black;
+  height: fit-content;
+  padding-bottom: 15px;
+}
+.accordion {
+  width: 100%;
+  background: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 17px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+}
+.accordion-content {
+  padding: 15px;
+  display: none;
+  background: white;
+  font-size: 16px;
+  color: black;
+}
+.accordion-header .arrow {
+  transition: transform 0.5s ease-in-out;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: rotate(0deg);
+}
+.accordion-header.active .arrow {
+  transform: rotate(90deg);
+}
