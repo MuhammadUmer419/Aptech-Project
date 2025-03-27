@@ -177,6 +177,22 @@
   .accordion-content {
     font-size: 14px;
   }
+
+  /* PRIVACY PAGE START HERE  */
+  .privacy-text {
+    font-size: 12px;
+  }
+  .privacy-title {
+    font-size: 18px;
+  }
+
+  /* TERMS PAGE START HERE  */
+  .terms-text {
+    font-size: 12px;
+  }
+  .terms-list {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 990px) {
   .header-logo {
@@ -340,6 +356,21 @@
     font-size: 14px;
   }
   .accordion-content {
+    font-size: 14px;
+  }
+
+  /* PRIVACY PAGE START HERE  */
+  .privacy-text {
+    font-size: 14px;
+  }
+  .privacy-title {
+    font-size: 24px;
+  }
+  /* TERMS PAGE START HERE  */
+  .terms-text {
+    font-size: 14px;
+  }
+  .terms-list {
     font-size: 14px;
   }
 }

@@ -61,7 +61,6 @@
     <link rel="stylesheet" href="laptop.css" />
     <link rel="stylesheet" href="large.css" />
   </head>
-
   <body>
 
 <!-- START HERE  -->
@@ -111,65 +110,68 @@
     </div>
 
     <div class="container">
-      <h2 class="contact-head">FAQS</h2>
+      <h2 class="contact-head">PRIVACY POLICY</h2>
       <p class="contact-para pt-3">
-        Home / <span class="fw-bold">FAQs</span>
+        Home / <span class="fw-bold">Privacy Policy</span>
       </p>
     </div>
   </div>
 
-  <!-- FAQS  -->
-   <div class="faq-bg">
 
- 
-   <div class="container mb-5">
+  <div class="terms-bg">
 
-    <h2 class="frequent-head pt-5">Frequently Asked Questions</h2>
-   
-  <div class="accordion mt-3">
-    <div class="accordion-item">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-           1) Which types of mirrors are available?
-            <span class="arrow">→</span>
-        </div>
-        <div class="accordion-content">We offer wall mirrors, vanity mirrors, decorative mirrors, and more.</div>
-    </div>
-    <div class="accordion-item mt-3">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-           2) Do you provide custom-sized mirrors?
-            <span class="arrow">→</span>
-        </div>
-        <div class="accordion-content">Yes, we offer custom sizes based on your requirements.</div>
-    </div>
-    <div class="accordion-item mt-3">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-           3) What are the price ranges?
-            <span class="arrow">→</span>
-        </div>
-        <div class="accordion-content">Prices vary depending on the type and size of the mirror. Check our catalog for details.</div>
-    </div>
-    <div class="accordion-item mt-3">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-           4) Do you offer delivery services?
-            <span class="arrow">→</span>
-        </div>
-        <div class="accordion-content">Yes, we provide home delivery with secure packaging.</div>
-    </div>
+<div class="container">
 
-    <div class="accordion-item mt-3">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-           5) Do you offer installation services?
-            <span class="arrow">→</span>
-        </div>
-        <div class="accordion-content">Yes, we provide professional installation services for all types of mirrors.</div>
-    </div>
+
+
+  <div class="privacy-container">
+    <h1 class="frequent-head">Privacy Policy</h1>
+    <p class="privacy-text"><span class="privacy-highlight">Effective Date:</span> March 27, 2025</p>
+    <p class="privacy-text">Welcome to our Mirrors Store. Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information.</p>
+    
+    <h2 class="privacy-title pt-3">Information We Collect</h2>
+    <ul class="privacy-text">
+        <li>Personal details like name, email, and phone number.</li>
+        <li>Payment details for transactions.</li>
+        <li>Browsing history and preferences.</li>
+        <li>Device and IP information for security purposes.</li>
+    </ul>
+    
+    <h2 class="privacy-title">How We Use Your Information</h2>
+    <ul class="privacy-text">
+        <li>To process and deliver your orders.</li>
+        <li>To improve our website and services.</li>
+        <li>To send promotional offers and updates.</li>
+        <li>To ensure security and prevent fraud.</li>
+    </ul>
+    
+    <h2 class="privacy-title">Third-Party Services</h2>
+    <ul class="privacy-text">
+        <li>Payment processing services.</li>
+        <li>Shipping and delivery partners.</li>
+        <li>Marketing and analytics providers.</li>
+        <li>Legal and compliance authorities if required.</li>
+    </ul>
+    
+    <h2 class="privacy-title">Cookies & Tracking</h2>
+    <ul class="privacy-text">
+        <li>Session cookies for site navigation.</li>
+        <li>Analytics cookies for tracking user behavior.</li>
+        <li>Advertising cookies for personalized ads.</li>
+        <li>Security cookies to protect user accounts.</li>
+    </ul>
+    
+    <h2 class="privacy-title">Contact Us</h2>
+    <ul class="privacy-text">
+        <li>Email: support@mirrorsstore.com</li>
+        <li>Phone: +1-800-123-4567</li>
+        <li>Address: 123 Mirror St, Reflection City</li>
+        <li>Support Hours: Mon-Fri, 9 AM - 6 PM</li>
+    </ul>
 </div>
 
 </div>
-
 </div>
-
-
 
     <!-- FOOTER SESSION START HERE  -->
 
@@ -323,29 +325,11 @@
       </div>
 
 
-
-
-
     </body>
-
-    <script src="app.js"></script>
-
+    <script src="./app.js"></script>
     <script>
-        function toggleAccordion(element) {
-            const content = element.nextElementSibling;
-            const allContents = document.querySelectorAll(".accordion-content");
-            const allHeaders = document.querySelectorAll(".accordion-header");
-            
-            allContents.forEach(item => {
-                if (item !== content) item.style.display = "none";
-            });
-            allHeaders.forEach(header => {
-                if (header !== element) header.classList.remove("active");
-            });
-            
-            const isActive = content.style.display === "block";
-            content.style.display = isActive ? "none" : "block";
-            element.classList.toggle("active", !isActive);
-        }
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Privacy Policy Page Loaded Successfully");
+        });
     </script>
     </html>

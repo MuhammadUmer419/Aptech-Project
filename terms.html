@@ -61,7 +61,6 @@
     <link rel="stylesheet" href="laptop.css" />
     <link rel="stylesheet" href="large.css" />
   </head>
-
   <body>
     <!-- START HERE  -->
     <div class="contactus-bg">
@@ -110,103 +109,57 @@
       </div>
 
       <div class="container">
-        <h2 class="contact-head">CONTACT US</h2>
+        <h2 class="contact-head">TERMS & CONDITIONS</h2>
         <p class="contact-para pt-3">
-          Home / <span class="fw-bold">Contact Us</span>
+          Home / <span class="fw-bold">Terms & Conditions</span>
         </p>
       </div>
     </div>
 
-    <div class="contact-color-bg pt-5">
-      <div class="contact-parent-box">
-        <h3 class="contact-parent-text">Get in touch</h3>
-
-        <div class="row px-4 mt-xl-5 mt-md-3 mt-0">
-          <div class="col-lg-6 pt-xl-0 pt-3">
-            <label for="number-1" class="input-text px-2">First Name</label
-            ><br />
-            <input
-              type="text"
-              id="number-1"
-              class="input-field-1 px-2 mt-1"
-              placeholder="First Name"
-            />
-            <div
-              id="error-number-1"
-              class="error-message"
-              style="color: red; font-size: 0.9em"
-            ></div>
-          </div>
-
-          <div class="col-lg-6 pt-xl-0 pt-3">
-            <label for="number-2" class="input-text px-2">Last Name</label
-            ><br />
-            <input
-              type="text"
-              id="number-2"
-              class="input-field-1 px-2 mt-1"
-              placeholder="Last Name"
-            />
-            <div
-              id="error-number-2"
-              class="error-message"
-              style="color: red; font-size: 0.9em"
-            ></div>
-          </div>
-        </div>
-
-        <div class="row px-4 mt-xl-3 mt-0">
-          <div class="col-lg-6 pt-xl-0 pt-3">
-            <label for="number-3" class="input-text px-2">Email Address</label
-            ><br />
-            <input
-              type="email"
-              id="number-3"
-              class="input-field-1 px-2 mt-1"
-              placeholder="Email Address"
-            />
-            <div
-              id="error-number-3"
-              class="error-message"
-              style="color: red; font-size: 0.9em"
-            ></div>
-          </div>
-
-          <div class="col-lg-6 pt-xl-0 pt-3">
-            <label for="phone-number" class="input-text px-2 pb-1"
-              >Phone Number</label
-            ><br />
-            <input
-              type="tel"
-              id="phone-number"
-              class="input-field-1 mt-1"
-              placeholder="Enter Phone Number"
-            />
-            <div
-              id="error-phone-number"
-              class="error-message"
-              style="color: red; font-size: 0.9em"
-            ></div>
+    <div class="privacy-bg pb-4">
+      <div class="container">
+        <div class="terms-container">
+          <h1 class="frequent-head pt-3">Terms and Conditions</h1>
+          <p class="terms-text">
+            Welcome to our mirror store website. By using this site, you agree
+            to the following terms and conditions:
+          </p>
+          <ul class="terms-list">
+            <li>All mirror images are for reference only.</li>
+            <li>Prices may change without prior notice.</li>
+            <li>Orders are subject to availability.</li>
+            <li>We are not responsible for damages during shipping.</li>
+            <li>By purchasing, you agree to our return policy.</li>
+            <li>
+              Custom mirror orders cannot be canceled once production has begun.
+            </li>
+            <li>We reserve the right to refuse service to anyone.</li>
+            <li>Discounts and offers are subject to terms and conditions.</li>
+            <li>
+              Users must provide accurate shipping information. Incorrect
+              details may result in delivery delays.
+            </li>
+            <li>
+              Personal data collected will be used in accordance with our
+              privacy policy.
+            </li>
+            <li>Unauthorized use of our content is prohibited.</li>
+            <li>
+              We do not guarantee that product colors will appear exactly as
+              shown on your screen.
+            </li>
+            <li>Any disputes will be resolved under applicable laws.</li>
+          </ul>
+          <div class="terms-btn-container">
+            <button class="terms-btn" onclick="showModal()">Accept</button>
           </div>
         </div>
 
-        <div class="mx-4 mt-3">
-          <label for="number-5" class="input-text px-2">Message</label>
-          <textarea
-            id="number-5"
-            class="message-box mt-1 px-2 pt-3"
-            placeholder="Write Your Message..."
-          ></textarea>
-          <div
-            id="error-number-5"
-            class="error-message"
-            style="color: red; font-size: 0.9em"
-          ></div>
-        </div>
-
-        <div class="position-relative px-3">
-          <button class="contact-bt mt-4">Contact Us</button>
-          <img src="./img/eclispe-arrow.svg" alt="" class="eclispe-arrow" />
+        <div class="terms-modal" id="termsModal">
+          <div class="terms-modal-content">
+            <p>Thank you for accepting our Terms and Conditions!</p>
+            <button class="terms-btn" onclick="closeModal()">Close</button>
+          </div>
         </div>
       </div>
     </div>
@@ -323,7 +276,9 @@
                 >
               </li>
               <li class="nav-item mt-3">
-                <a href="contactus.html" class="nav-link p-0 footer-anchors">Contact Us</a>
+                <a href="contactus.html" class="nav-link p-0 footer-anchors"
+                  >Contact Us</a
+                >
               </li>
               <li class="nav-item mt-3">
                 <a href="#" class="nav-link p-0 footer-anchors"
@@ -361,95 +316,14 @@
         Reserved
       </div>
     </div>
-
-
   </body>
-
-  <script src="./app.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
-
+  <script src="app.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var input = document.querySelector("#phone-number");
-      var iti = window.intlTelInput(input, {
-        separateDialCode: true,
-        preferredCountries: ["pk", "gb", "us", "in", "ae"],
-        utilsScript:
-          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
-      });
-
-      document
-        .querySelector(".contact-bt")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-
-          let firstName = document.getElementById("number-1").value.trim();
-          let lastName = document.getElementById("number-2").value.trim();
-          let email = document.getElementById("number-3").value.trim();
-          let phone = input.value.trim();
-          let message = document.getElementById("number-5").value.trim();
-
-          document.getElementById("error-number-1").innerText = "";
-          document.getElementById("error-number-2").innerText = "";
-          document.getElementById("error-number-3").innerText = "";
-          document.getElementById("error-phone-number").innerText = "";
-          document.getElementById("error-number-5").innerText = "";
-
-          let isValid = true;
-          let namePattern = /^[A-Za-z\s]+$/;
-          let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-          if (firstName === "") {
-            document.getElementById("error-number-1").innerText =
-              "First Name is required.";
-            isValid = false;
-          } else if (!namePattern.test(firstName)) {
-            document.getElementById("error-number-1").innerText =
-              "First Name can only contain letters.";
-            isValid = false;
-          }
-
-          if (lastName === "") {
-            document.getElementById("error-number-2").innerText =
-              "Last Name is required.";
-            isValid = false;
-          } else if (!namePattern.test(lastName)) {
-            document.getElementById("error-number-2").innerText =
-              "Last Name can only contain letters.";
-            isValid = false;
-          }
-
-          if (email === "") {
-            document.getElementById("error-number-3").innerText =
-              "Email Address is required.";
-            isValid = false;
-          } else if (!emailPattern.test(email)) {
-            document.getElementById("error-number-3").innerText =
-              "Enter a valid Email Address.";
-            isValid = false;
-          }
-
-          if (phone === "") {
-            document.getElementById("error-phone-number").innerText =
-              "Phone Number is required.";
-            isValid = false;
-          } else if (!iti.isValidNumber()) {
-            document.getElementById("error-phone-number").innerText =
-              "Enter a valid Phone Number.";
-            isValid = false;
-          }
-
-          if (message === "") {
-            document.getElementById("error-number-5").innerText =
-              "Message cannot be empty.";
-            isValid = false;
-          }
-
-          if (isValid) {
-            alert("Form Submitted Successfully!");
-          }
-        });
-    });
+    function showModal() {
+      document.getElementById("termsModal").style.display = "flex";
+    }
+    function closeModal() {
+      document.getElementById("termsModal").style.display = "none";
+    }
   </script>
 </html>
