@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
 }
+a{
+  color: white !important;
+  text-decoration: none !important;
+}
 p {
   margin-bottom: 0 !important;
 }
@@ -1231,11 +1235,10 @@ h6 {
 
 /* MODAL SESSION START HERE */
 .modal-content {
-  background-color:white !important;
+  background-color: white !important;
 }
-.modal.fade.show{
+.modal.fade.show {
   backdrop-filter: blur(10px);
-
 }
 .modal-image {
   width: 200px;
@@ -1243,30 +1246,30 @@ h6 {
 
 .modal-text-1 {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight:600;
+  font-weight: 600;
   font-size: 16px;
-  color:black;
+  color: black;
   text-align: center;
 }
 
 .modal-text-2 {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  color:black;
+  color: black;
 }
 
-.modal-text-3{
-  color:black;
+.modal-text-3 {
+  color: black;
   font-size: 25px;
   font-family: "El Messiri", sans-serif;
   font-weight: 700;
 }
-.list-texts{
-  color:black;
+.list-texts {
+  color: black;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
 }
-.modal-bt{
+.modal-bt {
   width: fit-content;
   padding-left: 10px;
   padding-right: 10px;
@@ -1277,10 +1280,43 @@ h6 {
   font-family: "Montserrat", sans-serif;
   border-radius: 20px;
 }
-.modal-bt:hover{
+.modal-bt:hover {
   background-color: black;
   color: white;
   transition: all 0.5s ease-in-out;
   border: 3px solid white;
 }
 
+/* DETAILS PAGES START HERE  */
+.detail-bg {
+  background-color: #1e1e1e;
+  height: fit-content;
+}
+.detail-corner {
+  color: white;
+  font-size: 13px;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.detail-text-1 {
+  color: white;
+  font-size: 45px;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.detail-text-second{
+  color: white;
+  font-size:32px;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.detail-text-paragraphs{
+  color:gray;
+  font-size:15px;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+}

@@ -1,4 +1,7 @@
 @media screen and (max-width: 480px) {
+  .start-div{
+    font-size: 13px;
+  }
   .header-logo {
     width: 100px;
   }
@@ -193,7 +196,19 @@
   .terms-list {
     font-size: 12px;
   }
+
+  /* DETAILS PAGES START HERE  */
+  .detail-text-1 {
+    font-size: 25px;
+  }
+  .detail-text-second {
+    font-size: 20px;
+  }
+  .detail-text-paragraphs {
+    font-size: 13px;
+  }
 }
+
 @media screen and (min-width: 481px) and (max-width: 990px) {
   .header-logo {
     width: 100px;
@@ -372,5 +387,16 @@
   }
   .terms-list {
     font-size: 14px;
+  }
+
+  /* DETAILS PAGES START HERE  */
+  .detail-text-1 {
+    font-size: 30px;
+  }
+  .detail-text-second {
+    font-size: 25px;
+  }
+  .detail-text-paragraphs {
+    font-size: 15px;
   }
 }
