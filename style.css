@@ -107,6 +107,9 @@ h6 {
   cursor: pointer;
   background-color: black;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
 }
 
 .hamburger {
@@ -1225,3 +1228,59 @@ h6 {
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
+
+/* MODAL SESSION START HERE */
+.modal-content {
+  background-color:white !important;
+}
+.modal.fade.show{
+  backdrop-filter: blur(10px);
+
+}
+.modal-image {
+  width: 200px;
+}
+
+.modal-text-1 {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight:600;
+  font-size: 16px;
+  color:black;
+  text-align: center;
+}
+
+.modal-text-2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color:black;
+}
+
+.modal-text-3{
+  color:black;
+  font-size: 25px;
+  font-family: "El Messiri", sans-serif;
+  font-weight: 700;
+}
+.list-texts{
+  color:black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+.modal-bt{
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 20px;
+}
+.modal-bt:hover{
+  background-color: black;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  border: 3px solid white;
+}
+
