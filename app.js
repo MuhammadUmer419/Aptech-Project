@@ -69,6 +69,7 @@ viewLessBtn.addEventListener("click", function () {
   viewMoreBtn.style.display = "block";
 });
 
+// MODALS FUNCTIONS
 
 
 

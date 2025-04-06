@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-a{
+a {
   color: white !important;
   text-decoration: none !important;
 }
@@ -38,6 +38,16 @@ h6 {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SF-Pro-Display-Regular.woff2") format("woff2"),
+       url("/fonts/SF-Pro-Display-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
 
 /* HOME PAGE START HERE  */
 .header-logo {
@@ -140,7 +150,7 @@ h6 {
 .offcanvas-menu a {
   display: block;
   padding: 15px 20px;
-  color: black;
+  color: black !important;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -172,8 +182,9 @@ h6 {
 
 .banner-text-1 {
   color: white;
-  font-family: "El Messiri", sans-serif;
-  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+
+  /* font-weight: 700; */
   font-size: 60px;
   padding-top: 140px;
   line-height: 70px;
@@ -656,7 +667,7 @@ h6 {
 }
 .mirror-img {
   width: 100%;
-  height: 615px;
+  height: 640px;
   display: flex;
   margin: 0 auto;
   border-radius: 15px;
@@ -1307,16 +1318,16 @@ h6 {
   text-align: center;
 }
 
-.detail-text-second{
+.detail-text-second {
   color: white;
-  font-size:32px;
+  font-size: 32px;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
 }
 
-.detail-text-paragraphs{
-  color:gray;
-  font-size:15px;
+.detail-text-paragraphs {
+  color: gray;
+  font-size: 15px;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
 }
