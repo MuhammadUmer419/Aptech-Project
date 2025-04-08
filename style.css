@@ -41,13 +41,10 @@ h6 {
 @font-face {
   font-family: "SF Pro Display";
   src: url("/fonts/SF-Pro-Display-Regular.woff2") format("woff2"),
-       url("/fonts/SF-Pro-Display-Regular.woff") format("woff");
+    url("/fonts/SF-Pro-Display-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
-
-
-
 
 /* HOME PAGE START HERE  */
 .header-logo {
@@ -108,13 +105,39 @@ h6 {
 }
 
 .nav-links a {
+  position: relative;
+  display: inline-block;
   color: white;
   text-decoration: none;
   font-size: 16px;
-  transition: 0.3s;
+  transition: color 0.3s ease;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
+  padding: 8px 0;
 }
+.nav-links a::after {
+  content: "";
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height:4px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  transition: width 0.5s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
 .hover-navs {
   height: fit-content;
   padding-bottom: 10px;
@@ -132,7 +155,6 @@ h6 {
   cursor: pointer;
   color: white !important;
 }
-
 /* Offcanvas Menu */
 .offcanvas-menu {
   position: fixed;
@@ -182,7 +204,7 @@ h6 {
 
 .banner-text-1 {
   color: white;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 
   /* font-weight: 700; */
   font-size: 60px;
@@ -738,6 +760,27 @@ h6 {
   font-size: 14px !important;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
+  width: fit-content;
+  position: relative;
+  padding: 8px 0;
+}
+.footer-anchors::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height:4px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  transition: width 0.5s ease-in-out;
+  top:20px;
+}
+
+.footer-anchors:hover::after {
+  width: 100%;
 }
 
 .social-box {
@@ -1234,6 +1277,7 @@ h6 {
   background: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(5px);
 }
 .terms-modal-content {
   background: white;

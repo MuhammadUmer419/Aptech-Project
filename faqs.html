@@ -262,11 +262,6 @@
                   <a href="contactus.html" class="nav-link p-0 footer-anchors">Contact Us</a>
                 </li>
                 <li class="nav-item mt-3">
-                  <a href="#" class="nav-link p-0 footer-anchors"
-                    >LED Mirros Report</a
-                  >
-                </li>
-                <li class="nav-item mt-3">
                   <a href="faqs.html" class="nav-link p-0 footer-anchors">FAQs</a>
                 </li>
               </ul>
@@ -324,4 +319,17 @@
             element.classList.toggle("active", !isActive);
         }
     </script>
+
+    <script>
+      const currentPage = window.location.pathname.split("/").pop();
+      const navLinks = document.querySelectorAll(".nav-links a");
+    
+      navLinks.forEach(link => {
+        const linkHref = link.getAttribute("href");
+        if (linkHref === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+    
     </html>

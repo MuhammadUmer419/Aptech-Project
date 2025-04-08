@@ -283,11 +283,6 @@
                   >
                 </li>
                 <li class="nav-item mt-3">
-                  <a href="#" class="nav-link p-0 footer-anchors"
-                    >LED Mirros Report</a
-                  >
-                </li>
-                <li class="nav-item mt-3">
                   <a href="faqs.html" class="nav-link p-0 footer-anchors"
                     >FAQs</a
                   >
@@ -327,7 +322,17 @@
   <script src="app.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  <script>
+    const currentPage = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll(".nav-links a");
+  
+    navLinks.forEach(link => {
+      const linkHref = link.getAttribute("href");
+      if (linkHref === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
   <script>
     AOS.init();
   </script>
